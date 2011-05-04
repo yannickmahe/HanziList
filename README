@@ -11,9 +11,3 @@ pinyin_no_accents: the pinyin pronunciation of the character, without the tonal 
 meaning: the dictionnary meaning of the character
 alternative & alternative2: the alternative form of the character
 trad1 & trad2: the traditionnal form(s) of the character.
-
-v0.01
-
-TODO: 
--equivalent dump for MongoDB database
--equivalent dump for CSV format
