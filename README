@@ -17,3 +17,4 @@ v0.01
 TODO: 
 -equivalent dump for MongoDB database
 -equivalent dump for CSV format
+-separate examples from definition in meaning field
