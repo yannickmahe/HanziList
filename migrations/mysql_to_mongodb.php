@@ -1,0 +1,1 @@
+<?phprequire_once('include.php');$mysqli->query("SET NAMES 'utf8'");$query = "SELECT * FROM hanzi";$result = $mysqli->query($query);$mongo = new Mongo();$mongo_db = $mongo->hanzi;$collection = $mongo_db->hanzi;while($row = $result->fetch_assoc()){    unset($row['id']);    $collection->insert($row);}
