@@ -26,29 +26,19 @@ This file is a dump of the hanzi table, with same columns
 
 ### hanzi.bson
 This file is a dump of an equivalent mongodb table, with document structure like this:
-[_id] => MongoId Object (
 
-    [$id] => 
-    
-)
-
-[rank] => 
-
-[char] => 
-
-[pinyin] => 
-
-[pinyin_no_accents] => 
-
-[meaning] => 
-
-[alternative] => 
-
-[alternative2] => 
-
-[trad1] => 
-
-[trad2] => 
+    [_id] => MongoId Object (
+        [$id] => 
+    )
+    [rank] => 
+    [char] => 
+    [pinyin] => 
+    [pinyin_no_accents] => 
+    [meaning] => 
+    [alternative] => 
+    [alternative2] => 
+    [trad1] => 
+    [trad2] => 
 
 
 Migration files
