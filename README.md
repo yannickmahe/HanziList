@@ -1,6 +1,16 @@
+HANZILIST
+=========
+
+Description
+-----------
 A list of the 2715 most commonly used Chinese characters (Hanzi), sorted by frequency of use.
 
-hanzi.sql file is a dump of the MySQL database.
+Dump Files
+----------
+
+### hanzi.sql 
+
+This file is a dump of the MySQL database. It is the main file: others are exports from this file
 There is only 1 table, hanzi. Here is the description of the fields:
 
 rank: rank of the frequency of use of the character, 1 being the most frequent.
@@ -11,9 +21,11 @@ meaning: the dictionnary meaning of the character
 alternative & alternative2: the alternative form of the character
 trad1 & trad2: the traditionnal form(s) of the character.
 
-hanzi.csv file is a dump of the table, with same columns
+### hanzi.csv 
+This file is a dump of the hanzi table, with same columns
 
-hanzi.bson is a dump of an equivalent mongodb table, with document structure like this:
+### hanzi.bson
+This file is a dump of an equivalent mongodb table, with document structure like this:
 [_id] => MongoId Object (
     [$id] => 
 )
@@ -27,5 +39,11 @@ hanzi.bson is a dump of an equivalent mongodb table, with document structure lik
 [trad1] => 
 [trad2] => 
 
+Migration files
+---------------
 
-in migrations folder, there is the script to migrate from mysql DB to CSV export. Change the values in include.php to get it from your local DB.
+In the 'migrations' folder, there are the scripts to migrate from mysql DB to CSV export and MongoDB. 
+Change the values in include.php to use it from your local DB.
+
+mysql_to_csv.php dumps a CSV export of the Mysql DB
+mysql_to_mongodb.php exports the MysqlDB table to a MongoDB database (collection : 'hanzi').
