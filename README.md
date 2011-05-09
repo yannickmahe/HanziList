@@ -27,17 +27,29 @@ This file is a dump of the hanzi table, with same columns
 ### hanzi.bson
 This file is a dump of an equivalent mongodb table, with document structure like this:
 [_id] => MongoId Object (
+
     [$id] => 
+    
 )
+
 [rank] => 
+
 [char] => 
+
 [pinyin] => 
+
 [pinyin_no_accents] => 
+
 [meaning] => 
+
 [alternative] => 
+
 [alternative2] => 
+
 [trad1] => 
+
 [trad2] => 
+
 
 Migration files
 ---------------
@@ -45,5 +57,5 @@ Migration files
 In the 'migrations' folder, there are the scripts to migrate from mysql DB to CSV export and MongoDB. 
 Change the values in include.php to use it from your local DB.
 
-mysql_to_csv.php dumps a CSV export of the Mysql DB
-mysql_to_mongodb.php exports the MysqlDB table to a MongoDB database (collection : 'hanzi').
+* mysql_to_csv.php dumps a CSV export of the Mysql DB
+* mysql_to_mongodb.php exports the MysqlDB table to a MongoDB database (collection : 'hanzi').
