@@ -13,13 +13,13 @@ Dump Files
 This file is a dump of the MySQL database. It is the main file: others are exports from this file
 There is only 1 table, hanzi. Here is the description of the fields:
 
-rank: rank of the frequency of use of the character, 1 being the most frequent.
-char: the UTF-8 value of the character, in simplified  form
-pinyin: the pinyin pronunciation of the character
-pinyin_no_accents: the pinyin pronunciation of the character, without the tonal diacritics
-meaning: the dictionnary meaning of the character
-alternative & alternative2: the alternative form of the character
-trad1 & trad2: the traditionnal form(s) of the character.
+* rank: rank of the frequency of use of the character, 1 being the most frequent.
+* char: the UTF-8 value of the character, in simplified  form
+* pinyin: the pinyin pronunciation of the character
+* pinyin_no_accents: the pinyin pronunciation of the character, without the tonal diacritics
+* meaning: the dictionnary meaning of the character
+* alternative & alternative2: the alternative form of the character
+* trad1 & trad2: the traditionnal form(s) of the character.
 
 ### hanzi.csv 
 This file is a dump of the hanzi table, with same columns
